@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "187235453664",
+    "project_id": "billing-sample-app",
+    "storage_bucket": "billing-sample-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:187235453664:android:7448aa4942604a62c15e85",
+        "android_client_info": {
+          "package_name": "com.example.billing_sample_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "187235453664-mfn7ik1vu988d01tbb0dmd3qs5rgrl4a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVA-KITkX8rGThgKsaKGwO6OfHzowo7-4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "187235453664-mfn7ik1vu988d01tbb0dmd3qs5rgrl4a.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "187235453664-d35tvgnqq11d084s0pl50pcpjbj1htad.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.billingSampleApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
