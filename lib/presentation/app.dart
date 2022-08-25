@@ -1,3 +1,5 @@
+import 'package:billing_sample_app/presentation/style/theme/app_theme.dart';
+import 'package:billing_sample_app/presentation/style/theme/dart_app_theme.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {
@@ -7,9 +9,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: getAppTheme(),
+      darkTheme: getDartAppTheme(),
     );
   }
 }
