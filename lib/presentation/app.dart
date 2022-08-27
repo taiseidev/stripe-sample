@@ -1,5 +1,6 @@
 import 'package:billing_sample_app/presentation/style/theme/app_theme.dart';
 import 'package:billing_sample_app/presentation/style/theme/dart_app_theme.dart';
+import 'package:billing_sample_app/presentation/top/top_page.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {
@@ -8,9 +9,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      title: 'Billing Sample',
       theme: getAppTheme(),
-      darkTheme: getDartAppTheme(),
+      // darkTheme: getDartAppTheme(),
+      home: const TopPage(),
     );
   }
 }
