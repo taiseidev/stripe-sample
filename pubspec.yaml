@@ -14,6 +14,10 @@ dependencies:
   flutter_riverpod:
   flutter_stripe:
   js:
+  go_router:
+  lottie:
+  hooks_riverpod:
+  flutter_hooks: ^0.18.5+1
 
 dev_dependencies:
   flutter_test:

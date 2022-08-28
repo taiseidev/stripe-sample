@@ -9,11 +9,11 @@ void redirectToCheckout(BuildContext _) async {
       'pk_test_51LbIeIL5k5aLBvWEpjAhq1nfMFwbONVY9X4OiWZkSjHtIsVFoS23I9L2YoWiQiAWDcUOOzRM1sAdtU10xHX5D0Qg003s65LDp3');
   stripe.redirectToCheckout(CheckoutOptions(
     lineItems: [
-      LineItem(price: 'price_1LbeSBL5k5aLBvWE35pk0EbD', quantity: 1),
+      LineItem(price: 'price_1LbevtL5k5aLBvWEaPCx0BlX', quantity: 1),
     ],
     mode: 'payment',
-    successUrl: 'http://localhost:8080/#/success',
-    cancelUrl: 'http://localhost:8080/#/cancel',
+    successUrl: 'http://localhost:62103/#/success',
+    cancelUrl: 'http://localhost:62103/#/',
   ));
 }
 

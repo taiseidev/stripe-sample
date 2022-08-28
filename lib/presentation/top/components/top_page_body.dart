@@ -10,32 +10,33 @@ class TopPageBody extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final navigationState = ref.watch(navigationStateProvider);
     return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        if (navigationState)
-          NavigationRail(
-            destinations: const [
-              NavigationRailDestination(
-                icon: Icon(Icons.home),
-                label: Text('Home'),
-              ),
-              NavigationRailDestination(
-                icon: Icon(Icons.bookmark),
-                label: Text('Bookmark'),
-              ),
-              NavigationRailDestination(
-                icon: Icon(Icons.people),
-                label: Text('Friends'),
-              ),
-            ],
-            selectedIndex: ref.watch(selectedIndexProvider),
-            onDestinationSelected: (index) {
-              ref
-                  .read(selectedIndexProvider.notifier)
-                  .update((state) => state = index);
-            },
-          ),
-        const NavigationStateButton(),
+        // if (navigationState)
+        //   NavigationRail(
+        //     destinations: const [
+        //       NavigationRailDestination(
+        //         icon: Icon(Icons.home),
+        //         label: Text('Home'),
+        //       ),
+        //       NavigationRailDestination(
+        //         icon: Icon(Icons.bookmark),
+        //         label: Text('Bookmark'),
+        //       ),
+        //       NavigationRailDestination(
+        //         icon: Icon(Icons.people),
+        //         label: Text('Friends'),
+        //       ),
+        //     ],
+        //     selectedIndex: ref.watch(selectedIndexProvider),
+        //     onDestinationSelected: (index) {
+        //       ref
+        //           .read(selectedIndexProvider.notifier)
+        //           .update((state) => state = index);
+        //     },
+        //   ),
+        // const NavigationStateButton(),
         Center(
           child: ElevatedButton(
             onPressed: () => redirectToCheckout(context),
