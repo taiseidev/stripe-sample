@@ -1,3 +1,4 @@
+import 'package:billing_sample_app/infrastructure/stripe/stripe_checkout_web.dart';
 import 'package:billing_sample_app/presentation/top/providers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -34,7 +35,13 @@ class TopPageBody extends ConsumerWidget {
                   .update((state) => state = index);
             },
           ),
-        NavigationStateButton(),
+        const NavigationStateButton(),
+        Center(
+          child: ElevatedButton(
+            onPressed: () => redirectToCheckout(context),
+            child: const Text('Stripe Checkout in Flutter!'),
+          ),
+        ),
       ],
     );
   }

@@ -9,13 +9,15 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^1.0.2
-  firebase_core: ^1.21.1
-  flutter_riverpod: ^1.0.4
+  cupertino_icons:
+  firebase_core:
+  flutter_riverpod:
+  flutter_stripe:
+  js:
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.0
+  flutter_lints:
 flutter:
   uses-material-design: true
