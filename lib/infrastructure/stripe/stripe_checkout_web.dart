@@ -6,10 +6,10 @@ import 'package:js/js.dart';
 
 void redirectToCheckout(BuildContext _) async {
   final stripe = Stripe(
-      'pk_test_51LbIeIL5k5aLBvWEpjAhq1nfMFwbONVY9X4OiWZkSjHtIsVFoS23I9L2YoWiQiAWDcUOOzRM1sAdtU10xHX5D0Qg003s65LDp3');
+      'api_key');
   stripe.redirectToCheckout(CheckoutOptions(
     lineItems: [
-      LineItem(price: 'price_1LbevtL5k5aLBvWEaPCx0BlX', quantity: 1),
+      LineItem(price: 'item_id', quantity: 1),
     ],
     mode: 'payment',
     successUrl: 'http://localhost:62103/#/success',
